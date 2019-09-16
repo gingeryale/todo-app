@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header text-center"><h1>My Task Board</h1></div>
+		<div class="row write">
+			<form class="mx-auto">
+				<div class="form-group font-weight-bold">
+					<label for="task">Task</label>
+					<textarea required="true" class="form-control user-data" id="task-text" rows="1" name="taskAdd"></textarea>
+					<p class="mt-3">
+						<span class="mr-3">
+							<label for="date">Date</label>
+							<input type="date" id="task-date" name="taskDate" class="user-data" required="true">
+						</span>
+						<span class="ml-1">
+							<label for="time">Time</label>
+							<input type="time" id="task-time" name="taskTime" class="user-data">
+						</span>
+					</p>
+					<p class="btns">
+						<button class="btn btn-warning btn-lg" type="button" id="send">Submit Form</button>
+						<button class="btn btn-dark ml-1 btn-sm" type="button" id="clear">Clear Fields</button>
+					</p>
+				</div>
+			</form>
+		</div>
+
+		<div class="read">
+			<ul class="row list-inline mx-auto" id="results">
+				<!-- <li class="col-3 list-inline-item mt-1" id="task-box">
+				<span class="glyphicon glyphicon-remove" id="tb-delete" aria-hidden="true"></span> 					
+  
+					<span class="read-data msg" id="tb-msg">text: read</span>
+					<span class="read-data date" id="tb-date">date:read</span>
+					<span class="read-data time" id="tb-time">time:read</span>
+				</li>
+				 -->
+				
+			</ul>
+			<button class="btn btn-danger ml-1 btn-sm" type="button" id="reset">RESET FORM</button>
+		</div>
+	</div>
+	<span class="badge badge-warning disclaimer">Please disable Third-Party Cookie Blocker in browser settings. To Delete - Press X twice.</span>
+	<script src="js/script.js"></script>
+</body>
+</html>
