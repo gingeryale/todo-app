@@ -38,15 +38,15 @@ function saveDOM(){
 
     let boxMsg = document.createElement("span");
     boxMsg.setAttribute("id","tb-msg");
-    boxMsg.className = "read-data msg";
+    boxMsg.className = "read-data";
     
     let boxDate = document.createElement("span");
     boxDate.setAttribute("id","tb-date");
-    boxDate.className = "read-data date";
+    boxDate.className = "read-data";
 
     let boxTime = document.createElement("span");
     boxTime.setAttribute("id","tb-time");
-    boxTime.className = "read-data time";
+    boxTime.className = "read-data";
 
 	let d = new Date();
 	let dh = d.getHours();
